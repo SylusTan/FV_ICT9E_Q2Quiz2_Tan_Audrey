@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seatwork #2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+
+        .container {
+            background-color: #525252;
+            box-shadow: 0 0 4px 1px #000000;
+            width: 1050px;
+            padding: 45px;
+        }
+
+        .container1 {
+            background-color: #979797;      
+            width: 1300px;
+            padding: 25px;
+            border: 3px dotted black;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+            margin: auto;
+        }
+
+        body {
+            background-image: url('https://wallpapers.com/images/hd/light-grey-background-wbvad24kehv4v5u5.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+         #submit {
+        background-color: #585858; 
+        color: #d1d1b8; 
+        border: 2px solid #d1d1b8; 
+        padding: 5px 20px; 
+        font-size: 18px; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    a {
+    color: #3498db; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <center>
+        <h1><span style="color: #cacaad; text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1); font-family: Optima;">Robotics Club Membership Form</span></h1>
+    </center>
+</div>
+<br>
+<div class="container">
+    <form>
+        <div class="row ">
+            <div class="col-md-6">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="number" class="form-control" required>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <label>Preferred Robotic Topics:</label>
+                <div>
+                    <input type="radio" id="programming" name="topic" value="Programming">
+                    <label for="programming">Software Development</label><br>
+                    <input type="radio" id="electronics" name="topic" value="Electronics">
+                    <label for="electronics">Circuitry and Sensors</label><br>
+                    <input type="radio" id="mechanical" name="topic" value="Mechanical Design">
+                    <label for="mechanical">Structural Engineering</label><br>
+                    <input type="radio" id="all" name="topic" value="All of the Above">
+                    <label for="all">All of the Above</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <label>Robotics Experience Level:</label>
+                <div>
+                    <input type="radio" id="beginner" name="experience" value="Beginner">
+                    <label for="beginner">Beginner</label><br>
+                    <input type="radio" id="intermediate" name="experience" value="Intermediate">
+                    <label for="intermediate">Intermediate</label><br>
+                    <input type="radio" id="advanced" name="experience" value="Advanced">
+                    <label for="advanced">Advanced</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="project">Preferred Robotics Project:</label>
+                <select id="project" name="project" class="form-select" required>
+                    <option value="" disabled selected>Choose a project!</option>
+                    <option value="Marching Band">Artificial Intelligence</option>
+                    <option value="Glee Club">Humanoid Robot</option>
+                    <option value="Communications Club">Human-Robot Interaction</option>
+                    <option value="Volleyball Varsity">Biomedical Robot</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="reason">Why do you want to join?</label>
+                <textarea id="reason" name="reason" rows="4" cols="30" class="form-control" placeholder="Type your answer here..." required></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="reason">What do you see yourself using robotics in the future?</label>
+                <textarea id="reason" name="reason" rows="4" cols="30" class="form-control" placeholder="Type your answer here..." required></textarea>
+            </div>
+        </div>
+        <br>
+        <input type="submit" id="submit" name="submit" value="Join Now" class="btn btn-primary">
+    </form>
+    <br>
+    <center><a class="nav-link" href="index.html">Back Home!</a></center>
+    <center><p><a href="https://gradcoach.com/research-topics-automation-robotics/">Sources!</a></p></center>
+</div>
+
+
+
+
+</body>
+</html>
